@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2">
+    <thead>
+        <th>Team</th>
+        <th>Player_id</th>
+        <th>Player</th>
+    </thead>
+
+    <tbody>
+        {% for roster in rosters %}
+        <tr>
+            <td>{{ roster[0] }}</td>
+            <td>{{ roster[1] }}</td>
+            <td>{{ roster[2] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

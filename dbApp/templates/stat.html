@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+        <th>Player</th>
+        <th>PPG</th>
+        <th>APG</th>
+        <th>RPG</th>
+    </thead>
+
+    <tbody>
+        {% for info in infos %}
+        <tr>
+            <td>{{ info[0] }}</td>
+            <td>{{ info[1] }}</td>
+            <td>{{ info[2] }}</td>
+            <td>{{ info[3] }}</td>
+            <br>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

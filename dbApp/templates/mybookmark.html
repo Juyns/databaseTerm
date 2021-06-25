@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{sorf}} <br><br>
+<table border="1">
+    <thead>
+        <th>player id:</th>
+        <th>player name:</th>
+        <th>player tag:</th>
+    </thead>
+    {% for player in bookmark %}
+        <tr>
+            <td>{{ player[0] }}</td>
+            <td>{{ player[1] }}</td>
+            <td>{{ player[2] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+    <form action="/editTag" method="POST">
+        edit player tag <br>
+        <label for="id">player id: </label>
+        <input id = "id" type="text" name="id" value=""><br>
+        <label for="tag">new tag: </label>
+        <input id = "tag" type="text" name="newtag" value=""><br>
+        <input type="submit" value="edit tag" name="edit"><br>
+    </form>
+</body>
+</html>

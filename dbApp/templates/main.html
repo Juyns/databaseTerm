@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>nba Atlantic division & key players</h2>
+<br>
+
+<h3>basic stats of players in 2019-2020 Atlantic Division</h3>
+<form action="/stat" method="GET">
+    <input type="submit" value="show average stats">
+</form>
+
+<br>
+<h3>major players of season</h3>
+
+<form action="/team_player" method="POST">
+    <label for="year_input">season: </label>
+    <input id = "year_input" type="text" name="year" value=""><br>
+    <input type="submit" value="get result" name="send">
+</form>
+
+<br>
+<h3>player bookmark</h3>
+{{info}}
+<form action="/add_myplayer" method="POST">
+    <label for="mark">player: </label>
+    <input id = "mark" type="text" name="player" value=""><br>
+    <label for="tag">mytag: </label>
+    <input id = "tag" type="text" name="mytag" value=""><br>
+    <input type="submit" value="my bookmark" name="send"><br>
+    <input type="submit" value="add to bookmark" name="send"><br>
+    <input type="submit" value="delete from bookmark" name="send"><br>
+</form>
+</body>
+</html>
